@@ -5,7 +5,7 @@
         type="checkbox"
         :id="index"
         class="item-checkbox"
-        v-model="item.checked"
+        @change="$emit('input', value)"
       />
       <label :for="index" :class="getItemClass(item.checked)">{{
         item.label

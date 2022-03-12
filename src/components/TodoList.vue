@@ -14,6 +14,7 @@
         :item="item"
         :index="index"
         @delete-item="deleteItem"
+        v-model="item.checked"
       />
     </ul>
   </div>
